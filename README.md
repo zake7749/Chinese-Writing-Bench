@@ -3,6 +3,9 @@
 
 Zhiyin is an LLM-as-a-judge benchmark for Chinese writing evaluation. This V1 release features 280 test cases across 18 diverse writing tasks.
 
+![462948315-d79b6a59-3bf4-4c12-93a7-96cac5f867ff](https://github.com/user-attachments/assets/46ce9ea3-951f-4e53-9544-657fea9eebd9)
+
+---
 
 ## 🎯 Benchmark Overview
 
@@ -26,7 +29,7 @@ To ensure a comprehensive analysis, the final score is informed by a multi-dimen
 
 ### Evaluation Scripts
 
-Please refer to `Evaluation.md` for more details.
+Please refer to [Evaluation.md](https://github.com/zake7749/Chinese-Writing-Bench/blob/master/Evaluation.md) for more details.
 
 ---
 
