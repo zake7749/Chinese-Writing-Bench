@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhiyin</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><i class="fas fa-feather"></i> Zhiyin</h1>
+            <p>Exploring the Frontier of Chinese LLM Writing</p>
+        </header>
+
+        <div class="dashboard card">
+            <section class="overview-section">
+                <h2 class="section-title">
+                  <span class="accent-bar"></span>
+                  Benchmark Overview
+                  <span class="section-title-spacer"></span>
+                  <span class="external-links-text">
+                    <a href="https://github.com/zake7749/Chinese-Writing-Bench" target="_blank" rel="noopener" class="external-link-text">GitHub</a>
+                    <span class="divider">&bull;</span>
+                    <a href="https://huggingface.co/datasets/zake7749/chinese-writing-bench" target="_blank" rel="noopener" class="external-link-text">Hugging Face</a>
+                  </span>
+                </h2>
+                <div class="overview-content">
+                    <div class="overview-text">
+                        <p>
+                          <strong>Zhiyin</strong> is an LLM-as-a-judge benchmark for Chinese writing evaluation, featuring 280 test cases across 18 diverse writing tasks in this V1 release.
+                        </p>
+                        <p>
+                            Our method relies on <strong>pairwise comparison</strong>. A powerful language model (O3) acts as the judge, scoring a model's response relative to a fixed baseline (GPT-4.1), which is anchored at a score of 5.
+                        </p>
+                
+                        <h4>Scoring System</h4>
+                        <p>The judge assigns the model's response an integer score from 0 to 10, where:</p>
+                        <ul>
+                            <li>A score > 5 indicates the response is <strong>superior</strong> to the baseline.</li>
+                            <li>A score = 5 indicates the response is <strong>on par</strong> with the baseline.</li>
+                            <li>A score < 5 indicates the response is <strong>inferior</strong> to the baseline.</li>
+                        </ul>
+                
+                        <h4>Evaluation Dimensions</h4>
+                        <p>To ensure a comprehensive analysis, the final score is informed by a multi-dimensional assessment. The judge evaluates the response across six key criteria:</p>
+                        <ol>
+                            <li><strong>Comprehension & Relevance:</strong> How well the response understands the prompt's intent and stays on topic.</li>
+                            <li><strong>Structure & Coherence:</strong> How clear, logical, and well-organized the writing is.</li>
+                            <li><strong>Prose & Style:</strong> The quality of the language, grammar, and adherence to the requested tone.</li>
+                            <li><strong>Creativity & Originality:</strong> The novelty of the ideas and the uniqueness of the perspective.</li>
+                            <li><strong>Depth & Insight:</strong> The level of detail, analysis, and substance provided.</li>
+                            <li><strong>Helpfulness:</strong> How effectively the response fulfills the user's overall goal.</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <section class="table-section">
+                <h2 class="section-title"><span class="accent-bar"></span>All Writing Tasks</h2>
+                <div id="generalTable" class="table-container">
+                    <!-- General Writing table will be populated here -->
+                </div>
+            </section>
+
+            <section class="table-section">
+                <h2 class="section-title"><span class="accent-bar"></span>Complicated Writing Tasks</h2>
+                <div id="complicatedTable" class="table-container">
+                    <!-- Complicated Writing table will be populated here -->
+                </div>
+            </section>
+
+            <section class="citation-section">
+                <h2 class="section-title"><span class="accent-bar"></span>Citation</h2>
+                <div class="citation-content">
+                    <p>
+                        If you use these results, please cite our paper:<br>
+                        <em>"Zhiyin: Exploring the Frontier of Chinese LLM Writing, 2025. https://github.com/zake7749/Chinese-Writing-Bench"</em>
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>Loading benchmark data...</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
