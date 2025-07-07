@@ -1,0 +1,7 @@
+backoff
+fire
+tqdm
+datasets
+pandas
+tabulate
+openai>0.28.1
