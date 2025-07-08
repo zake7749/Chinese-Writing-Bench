@@ -1,5 +1,5 @@
 # Zhiyin: Exploring the Frontier of Chinese LLM Writing
-[**Website**](http://zake7749.github.io/Chinese-Writing-Bench/) &bull; [**GitHub**](https://github.com/zake7749/Chinese-Writing-Bench) &bull; [**Hugging Face**](https://huggingface.co/datasets/zake7749/chinese-writing-bench)
+[**Website**](http://zake7749.github.io/Chinese-Writing-Bench/) &bull; [**GitHub**](https://github.com/zake7749/Chinese-Writing-Bench) &bull; [**Hugging Face**](https://huggingface.co/datasets/zake7749/chinese-writing-benchmark)
 
 Zhiyin is an LLM-as-a-judge benchmark for Chinese writing evaluation. This V1 release features 280 test cases across 18 diverse writing tasks.
 
