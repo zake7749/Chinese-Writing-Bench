@@ -1,5 +1,5 @@
 # Zhiyin: Exploring the Frontier of Chinese LLM Writing
-[**Website**](http://zake7749.github.io/Chinese-Writing-Bench/) &bull; [**GitHub**](https://github.com/zake7749/Chinese-Writing-Bench) &bull; [**Hugging Face**](https://huggingface.co/datasets/zake7749/chinese-writing-bench)
+[**Website**](http://zake7749.github.io/Chinese-Writing-Bench/) &bull; [**GitHub**](https://github.com/zake7749/Chinese-Writing-Bench) &bull; [**Hugging Face**](https://huggingface.co/datasets/zake7749/chinese-writing-benchmark)
 
 Zhiyin is an LLM-as-a-judge benchmark for Chinese writing evaluation. This V1 release features 280 test cases across 18 diverse writing tasks.
 
@@ -34,6 +34,9 @@ Please refer to [Evaluation.md](https://github.com/zake7749/Chinese-Writing-Benc
 ---
 
 ## Leaderboard: All Writing Tasks
+
+For the details of judgements, please refer to [zake7749/chinese-writing-bench-judgements](https://huggingface.co/datasets/zake7749/chinese-writing-bench-judgements)
+
 Scores are averaged across all 280 writing prompts.
 
 | Model | Overall | Comprehension | Coherence | Style | Creativity | Depth | Helpfulness |
@@ -42,11 +45,9 @@ Scores are averaged across all 280 writing prompts.
 | **Deepseek-R1-0528** | **6.77** | 6.72 | 6.70 | 7.10 | 7.02 | 6.60 | 6.58 |
 | **Qwen3-235B-Thinking** | **6.66** | 6.39 | 6.45 | 7.30 | 7.44 | 6.32 | 6.29 |
 | **Qwen3-32B-Thinking** | **6.58** | 6.34 | 6.43 | 7.09 | 7.19 | 6.19 | 6.18 |
-| **Monomer-24B-Writer** | **6.24** | 6.18 | 6.34 | 6.52 | 6.50 | 6.01 | 6.09 |
 | **Deepseek-V3-0324** | **6.20** | 6.08 | 6.24 | 6.56 | 6.61 | 5.80 | 5.96 |
 | **Qwen3-30B-A3B-Thinking** | **6.06** | 5.91 | 6.05 | 6.53 | 6.53 | 5.65 | 5.82 |
 | **Gemini-2.5-Flash** | **6.01** | 6.20 | 6.22 | 6.00 | 5.83 | 5.75 | 6.03 |
-| **Monomer-8B-Writer** | **5.70** | 5.66 | 5.96 | 6.00 | 5.95 | 5.57 | 5.63 |
 | **Qwen3-235B** | **5.59** | 5.74 | 5.88 | 5.63 | 5.51 | 5.21 | 5.55 |
 | **o4-mini-2025-04-16** | **5.54** | 5.80 | 5.70 | 5.59 | 5.44 | 5.10 | 5.58 |
 | **Mistral-3.2-24B-2506** | **5.35** | 5.53 | 5.82 | 5.53 | 5.61 | 5.01 | 5.35 |
@@ -71,11 +72,9 @@ Scores for a subset of more complex, nuanced, and challenging writing prompts.
 | **Deepseek-R1-0528** | **6.92** | 6.77 | 6.74 | 7.32 | 7.37 | 6.85 | 6.73 |
 | **Qwen3-235B-Thinking** | **6.58** | 6.22 | 6.25 | 7.42 | 7.77 | 6.32 | 6.17 |
 | **Qwen3-32B-Thinking** | **6.55** | 6.21 | 6.22 | 7.15 | 7.44 | 6.18 | 6.09 |
-| **Monomer-24B-Writer** | **6.34** | 6.24 | 6.31 | 6.57 | 6.79 | 6.08 | 6.18 |
 | **Deepseek-V3-0324** | **6.15** | 6.11 | 6.12 | 6.55 | 6.82 | 5.82 | 5.86 |
 | **Qwen3-30B-A3B-Thinking** | **6.03** | 5.77 | 6.05 | 6.55 | 6.74 | 5.67 | 5.78 |
 | **Gemini-2.5-Flash** | **5.94** | 6.20 | 6.14 | 5.92 | 5.80 | 5.71 | 6.00 |
-| **Monomer-8B-Writer** | **5.68** | 5.56 | 5.86 | 5.92 | 6.16 | 5.53 | 5.59 |
 | **Qwen3-235B** | **5.42** | 5.71 | 5.81 | 5.37 | 5.50 | 5.08 | 5.45 |
 | **o4-mini-2025-04-16** | **5.13** | 5.51 | 5.48 | 5.33 | 5.26 | 4.79 | 5.24 |
 | **Mistral-3.2-24B-2506** | **5.06** | 5.42 | 5.62 | 5.14 | 5.48 | 4.69 | 5.11 |
